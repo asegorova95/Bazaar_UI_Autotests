@@ -1,4 +1,4 @@
-login_email = "xyw96120@msssg.com"
-login_phone = "4552605793"
-password_mail = "hello1234"
-password_phone = "hello1234"
+login_email = "your_login"
+login_phone = "your_phone"
+password_mail = "your_password"
+password_phone = "your_password"

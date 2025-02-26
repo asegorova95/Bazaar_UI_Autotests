@@ -36,9 +36,9 @@ def setup(request):
     else:
         raise ValueError(f"Браузер {browser} не поддерживается!")
 
-    driver.get("https://dev.bazaarorigin.com/")# Настройка размера окна
+    driver.get("https://bazaarorigin.com/")
     if window_size == "max":
-        driver.maximize_window()
+        driver.maximize_window() # Настройка размера окна
     else:
         width, height = map(int, window_size.split(","))
         driver.set_window_size(width, height)
