@@ -1,0 +1,14 @@
+# Игнорируем виртуальное окружение
+.venv/
+venv/
+
+# Игнорируем кэш и временные файлы
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.idea/
+
+# Игнорируем Allure отчёты
+allure-results/
+allure-report/
