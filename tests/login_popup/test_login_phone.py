@@ -3,10 +3,9 @@ from pages.MyAdsPage import MyAdsPage
 from pages.AuthorizationForm import AuthorizationForm
 import allure
 
-
-@allure.title("[Web][LoginPopUp] Авторизация пользователя через номер телефона")
 @pytest.mark.usefixtures("setup")
 class TestLoginEmail:
+    @allure.title("[Web][LoginPopUp] Авторизация пользователя через номер телефона")
     def test_login_email(self):
         driver = self.driver  # Берём браузер из фикстуры
         login_page = AuthorizationForm(driver)  # Создаём объект перед вызовом метода

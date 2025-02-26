@@ -4,9 +4,9 @@ from pages.EventsPage import EventsPage
 from pages.MainPage import MainPage
 
 
-@allure.title("[Desktop][MainPage][EventsWidget] Переход к Афише")
 @pytest.mark.usefixtures("setup")
 class TestEventsWidget:
+    @allure.title("[Desktop][MainPage][EventsWidget] Переход к Афише")
     def test_go_to_single_event(self):
         driver = self.driver  # Берём браузер из фикстуры
         main_page = MainPage(driver)

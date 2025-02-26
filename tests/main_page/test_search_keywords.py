@@ -1,16 +1,14 @@
-import time
-
 import pytest
 import allure
 from pages.MainPage import MainPage
 from pages.SearchPage import SearchPage
 from utils.BaseClass import BaseClass
 
-
-@allure.title("[Desktop][MainPage][EventsWidget] Переход к Афише")
 @pytest.mark.usefixtures("setup")
 class TestSearchKeyword(BaseClass):
+    @allure.title("[Desktop][MainPage][EventsWidget] Переход к Афише")
     def test_search_by_keywords(self):
+
         driver = self.driver  # Берём браузер из фикстуры
         main_page = MainPage(driver)
         search_page = SearchPage(self.driver)
